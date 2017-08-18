@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+
+<body>
+
+  <div id="myModal" class="modal">
+
+    <div class="modal-content">
+      <p class="modal-header">Pick a figure to begin.</p>
+
+      <div class="row">
+        <button type="button" id="o" class="btn fa fa-circle-o" onclick="setFig(this.id)"></button>
+        <button type="button" id="x" class="btn fa fa-close" onclick="setFig(this.id)"></button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--     Game Board -->
+  <div class="wrapper">
+    <div class="header">
+      <div id="winner"></div>
+      <div id="move">AI's Move</div>
+    </div>
+
+    <div class="game">
+      <div class="row">
+        <button id="c00"></button>
+        <button id="c01"></button>
+        <button id="c02"></button>
+      </div>
+      <div class="row">
+        <button id="c10"></button>
+        <button id="c11"></button>
+        <button id="c12"></button>
+      </div>
+      <div class="row">
+        <button id="c20"></button>
+        <button id="c21"></button>
+        <button id="c22"></button>
+      </div>
+    </div>
+
+  </div>
+
+  <input type="button" id="restart" value="Restart Game" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
